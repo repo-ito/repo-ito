@@ -3,13 +3,15 @@ name: Generate Snake
 on:
   schedule:
     - cron: "0 */12 * * *" # Se ejecuta cada 12 horas
-  workflow_dispatch: # Permite ejecutarlo manualmente con un clic
+  workflow_dispatch: # Permite ejecutar manual
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions: 
+      contents: write # Esto da permiso explícito para guardar la imagen
     steps:
-      - name: Checkout del repositorio
+      - name: Checkout
         uses: actions/checkout@v3
 
       - name: Generar la serpiente
@@ -20,10 +22,10 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      - name: Publicar cambios
-        uses: crazy-max/gh-action-github-pages@v4
+      - name: Publicar cambios (Usando Peaceiris)
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: output
+          keep_files: true
