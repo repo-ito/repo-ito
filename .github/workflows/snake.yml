@@ -1,0 +1,32 @@
+name: Generate Datas
+
+on:
+  schedule: # se ejecuta cada 12 horas
+    - cron: "0 */12 * * *" 
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Jobs to update datas
+    runs-on: ubuntu-latest
+    steps:
+      # Animación de serpiente
+      - uses: Platane/snk@v3
+        with:
+          # nombre del usuario de github
+          github_user_name: ${{ github.repository_owner }}
+          # archivos de salida (el svg y el svg oscuro)
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Empujar los cambios a la rama output
+      - name: Push new files to the output branch
+        uses: crazy-max/gh-action-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
