@@ -4,7 +4,7 @@
 
 
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com/?lines=Hi+Guest+soy+Brian!+👋;Ingeniero+de+Sistemas+💻;Amante+del+Código;Bienvenido+a+mi+perfil+✨&center=true&width=500&height=50&color=33d6ff&vCenter=true&size=25" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com/?lines=Hi+Guest+soy+Brian!+👋;Ingeniero+de+Sistemas+💻;Interesado+del+Código;Bienvenido+a+mi+perfil+✨&center=true&width=500&height=50&color=33d6ff&vCenter=true&size=25" alt="Typing SVG" />
   </a>
 
   <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
@@ -18,7 +18,7 @@
 🌱  &nbsp;I'm on track for learning more about mng Databases, Systems Design, and Cloud Architecture.\
 💬  &nbsp;Feel free to reach out to me for pro bono consulting and volunteering, or just for some interesting discussion.\
 ✉️  &nbsp;You can shoot me an email at brianguido@hotmail.com I'll try to respond as soon as I can.\
-⚡  Fun Fact: **Puedo compilar código mentalmente... (A veces).**
+⚡  Fun Fact: **Puedo compilar código mentalmente... (A veces lmao) **
 
 ---
 
@@ -45,20 +45,6 @@
 </a>
 </p>
 
-
-  <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=repo-ito&show_icons=true&theme=radical&include_all_commits=true&count_private=true"/>
-  </a>
-  
-  <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=repo-ito&layout=compact&theme=radical&hide_border=true"/>
-  </a>
-
-</div>
-
-<div align="center">
-  <img src="https://github.com/repo-ito/repo-ito/blob/output/github-contribution-grid-snake.svg" alt="snake animation" />
-</div>
 
 <div align="center"> 
   <a href="https://git.io/streak-stats">
