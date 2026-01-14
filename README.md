@@ -41,14 +41,14 @@
 
 <p align="center">
 <a href="https://github.com/AVS1508">
-  <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=repo-ito&layout=compact&langs_count=8&theme=algolia"/>
+  <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=repo-dev1&layout=compact&langs_count=8&theme=algolia"/>
 </a>
 </p>
 
 
 <div align="center"> 
   <a href="https://git.io/streak-stats">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=repo-ito&theme=radical&hide_border=true" alt="GitHub Streak" />
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=repo-dev1&theme=radical&hide_border=true" alt="GitHub Streak" />
   </a>
 </div>
 
@@ -59,7 +59,7 @@
 </p>
 		
 <p align = "center">
-	<img src = "https://github.com/repo-ito/repo-ito/blob/output/github-contribution-grid-snake.svg?" alt = "Snake Game"/>
+	<img src = "https://github.com/repo-dev1/repo-dev1/blob/output/github-contribution-grid-snake.svg?" alt = "Snake Game"/>
 </p>
 
 <div align="center">
