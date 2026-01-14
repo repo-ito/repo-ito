@@ -1,30 +1,27 @@
-name: Generate Datas
+name: Generate Snake
 
 on:
-  schedule: # se ejecuta cada 12 horas
-    - cron: "0 */12 * * *" 
-  workflow_dispatch:
+  schedule:
+    - cron: "0 */12 * * *" # Se ejecuta cada 12 horas
+  workflow_dispatch: # Permite ejecutarlo manualmente con un clic
 
 jobs:
   build:
-    name: Jobs to update datas
     runs-on: ubuntu-latest
     steps:
-      # Animación de serpiente
-      - uses: Platane/snk@v3
+      - name: Checkout del repositorio
+        uses: actions/checkout@v3
+
+      - name: Generar la serpiente
+        uses: Platane/snk@v3
         with:
-          # nombre del usuario de github
           github_user_name: ${{ github.repository_owner }}
-          # archivos de salida (el svg y el svg oscuro)
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # Empujar los cambios a la rama output
-      - name: Push new files to the output branch
-        uses: crazy-max/gh-action-github-pages@v3.1.0
+      - name: Publicar cambios
+        uses: crazy-max/gh-action-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
